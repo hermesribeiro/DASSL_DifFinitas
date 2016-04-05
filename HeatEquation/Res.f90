@@ -10,7 +10,7 @@
     delta(1)=y(1)-treg
     delta(neq)=y(neq)-tempL
     do i=2,neq-1
-        delta(i)=alpha*(y(i-1)-2.d0*y(i)+y(i+1))*pn*pn
+        delta(i)=-yprime(i)+alpha*(y(i-1)-2.d0*y(i)+y(i+1))*pn*pn
     enddo
     
     
